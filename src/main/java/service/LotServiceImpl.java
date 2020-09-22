@@ -81,7 +81,7 @@ public class LotServiceImpl implements LotService{
         } else {
             int availableSpace = getAvailableSpace(type);
             if (availableSpace > 0) {
-                Date date = new Date();
+                Date date = new Date(System.currentTimeMillis());
                 car = new Car(id, CarType.get(type), date , null);
                 settleCapacity(type,ENTER, availableSpace);
                 cars.put(id,car);
@@ -97,7 +97,7 @@ public class LotServiceImpl implements LotService{
         if ( car == null) {
             return "Car does not exist!";
         } else {
-            Date exitDate = new Date();
+            Date exitDate = new Date(System.currentTimeMillis());
             car.setExitTime(exitDate);
             int availableSpace = getAvailableSpace(type);
             settleCapacity(type,EXIT, availableSpace);

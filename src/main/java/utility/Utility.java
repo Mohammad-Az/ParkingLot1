@@ -11,8 +11,8 @@ public class Utility {
     }
 
     public static long calHours(Date exit, Date enter) {
-        long diff = exit.getTime() - enter.getTime();
-        long  diffHours = (long) Math.ceil(diff / (60 * 60 * 1000) % 24);
+        float diff = exit.getTime() - enter.getTime();
+        long  diffHours = (long)  Math.ceil(diff / (60.0 * 60.0 * 1000.0) % 24.0);
         return diffHours;
     }
 }

@@ -1,6 +1,11 @@
 package model;
-
 import java.util.Date;
+
+/** Represent Cars
+ * @author Mohammad Azizkhani
+ * @version 1.0
+ * @Since 2020-09-21
+ */
 
 public class Car {
 
@@ -8,6 +13,7 @@ public class Car {
     private CarType type;
     private Date enterTime;
     private Date exitTime;
+
 
     public Car(String id, CarType type, Date enterTime, Date exitTime) {
         this.id = id;

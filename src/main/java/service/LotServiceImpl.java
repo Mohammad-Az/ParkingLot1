@@ -1,4 +1,9 @@
 package service;
+/**
+ * Implements lot services
+ * @version 1.0
+ * @since 2020-09-21
+ */
 
 import java.util.Arrays;
 import java.util.Date;
@@ -13,10 +18,13 @@ import utility.Utility;
 public class LotServiceImpl implements LotService{
 
     private static final Map<String, Car> cars = new HashMap<>();
-
+    /** Capacity of slots
+     */
     private static Integer STA_CAPACITY = 2;
     private static Integer KW20_CAPACITY = 2;
     private static Integer KW50_CAPACITY = 2;
+    /** Store each car in relevant slot
+     */
     private static final Map<String, Integer> capacities = new HashMap<String, Integer>();
     static {
         capacities.put(CarType.STA.getType(), STA_CAPACITY);

@@ -8,6 +8,11 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
+/**Interfqce qpplicqtion thqt operqtor ....
+ * @author Mohammad Azizkhani
+ * version 1.0
+ * since 2020-09-21
+ */
 
 public class Main {
 

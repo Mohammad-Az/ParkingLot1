@@ -1,5 +1,9 @@
 package model;
-
+/**
+ * represent type of car
+ * @param type of car which entered by user
+ * @return Type of car
+ */
 import java.util.HashMap;
 import java.util.Map;
 

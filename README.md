@@ -1,6 +1,6 @@
 # ParkingLot
 
-## Project Detailing & Use Casesva API :
+## Project Detailing & Use Cases API :
 
 A toll parking contains multiple parking slots of different types : 
 the standard parking slots for sedan cars.
